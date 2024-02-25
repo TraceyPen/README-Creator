@@ -13,6 +13,7 @@ var title = ""; //title of project
 var description = "";
 var installation = "";
 var usage = "";
+var licence 
 var contributing= "";
 var tests = "";
 var gitHubUserName = "";
@@ -36,8 +37,16 @@ function writeToFile(fileName, data) {
 async function init() {
     name = prompt('Hello, What is your name?');
     //title = fs.writeFile('./README.md', `${name}\n`, err => err ? console.error(err) : prompt(`Hello, ${name}! README.md file created! What is the title of your project?`));
-    title = prompt(`Hello, ${name}! What is the title of your project?`);
+    title = prompt(`Hello, ${name}! What is the title of your project? `);
     description = prompt(`Please describe the project ${title}: `);
+    installation = prompt(`Can you give some installation guidance? `);
+    usage = prompt(`What are the usage instructions? `);
+    licence = prompt(`What form of licence will you use? `);
+    contributing = prompt(`Who contributed to this project? `);
+    tests = prompt(`What tests have been performed? `);
+    gitHubUserName = prompt(`What is your GitHub username? `);
+    emailAddress = prompt(`What is your email address `)
+    Questions = prompt(`How should someone contact you with any questions? `)
     writeToFile()
     
 }

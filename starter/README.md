@@ -1,15 +1,13 @@
-#Weather App
+#Passwork generator
 
-## Creates a 5 day weather forecast
+## creates a password
 
 ## Table of Contents
 
 *[Installation](#installation)
 *[Usage](#usage)
-
 *[Licence](#licence)
 *[Contributing](#contributing)
 *[Tests](#tests)
-
 *[Questions](#questions)
 
