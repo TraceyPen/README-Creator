@@ -19,15 +19,13 @@ var tests = " ";
 var gitHubUserName =" ";
 var emailAddress = " ";
 var questions = " ";
+var mitLicence = " "
 
-// array of questions for user
-//const questions = [
-//];
 
 // function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile('./README.md',
-     `# ${title}[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n\n## Description\n${description}\n\n## Table of Contents\n\n[Installation](#installation)\n\n[Usage](#usage)\n\n[Licence](#licence)\n\n[Contributing](#contributing)\n\n[Tests](#tests)\n\n[Questions](#questions)\n\n## Installation\n${installation}\n\n## Usage\n${usage}\n\n## Licence\n${licence}\n\n## Contributing\n${contributing}\n\n## Tests\n${tests}\n\n## Questions:\n${questions}\n\nGitHub username: ${gitHubUserName}\n\nEmail: ${emailAddress}`,
+     `# ${title}${mitLicence}\n\n## Description\n${description}\n\n## Table of Contents\n\n[Installation](#installation)\n\n[Usage](#usage)\n\n[Licence](#licence)\n\n[Contributing](#contributing)\n\n[Tests](#tests)\n\n[Questions](#questions)\n\n## Installation\n${installation}\n\n## Usage\n${usage}\n\n## Licence\n${licence}\n\n## Contributing\n${contributing}\n\n## Tests\n${tests}\n\n## Questions:\n${questions}\n\nGitHub username: ${gitHubUserName}\n\nEmail: ${emailAddress}`,
       err => err ? console.error(err) : console.log(`${title} README.md file created!`));
    // fs.writeFile('./README.md', process.argv[2], err => err ? console.error(err) : console.log("Success"));
     
@@ -37,6 +35,7 @@ function getLicence() {
      if (licence == "m" || licence == "M") {
         console.log("licence is an M");
         licence = "MIT";
+        mitLicence = "<div align='right'>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</div>"
       } 
      if (licence == "p" || licence == "P") {
         console.log("licence is a P");
