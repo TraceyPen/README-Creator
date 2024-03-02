@@ -1,7 +1,7 @@
-# T
+# fdas[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-T
+fgags
 
 ## Table of Contents
 
@@ -18,23 +18,23 @@ T
 [Questions](#questions)
 
 ## Installation
-T
+fdsad
 
 ## Usage
-T
+fdasdf
 
 ## Licence
-Proprietary
+mmmm
 
 ## Contributing
-T
+fdas
 
 ## Tests
-T
+fda
 
 ## Questions:
-T
+fda
 
-GitHub username: T
+GitHub username: fda
 
-Email: T
+Email: fda
