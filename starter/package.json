@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.3.1",
-    "prompt-sync": "^4.2.0"
+    "prompt-sync": "^4.2.0",
+    "react-router-dom": "^6.22.2"
   }
 }

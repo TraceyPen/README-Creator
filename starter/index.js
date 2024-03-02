@@ -8,17 +8,16 @@ const prompt = require('prompt-sync')({sigint: true}); //Run npm install prompt-
 //     output: process.stdout
 //   });
 
-var name; //name of user input
+var name =""; //name of user input
 var title = ""; //title of project
 var description = "";
 var installation = "";
 var usage = "";
-var licence 
+var licence ="";
 var contributing= "";
 var tests = "";
 var gitHubUserName = "";
 var emailAddress = "";
-var otherContactInfo = "";
 var questions = "";
 // array of questions for user
 //const questions = [
@@ -27,7 +26,7 @@ var questions = "";
 // function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile('./README.md',
-     `#${title}\n\n## ${description}\n\n## Table of Contents\n\n*[Installation](#installation)\n*[Usage](#usage)\n*[Licence](#licence)\n*[Contributing](#contributing)\n*[Tests](#tests)\n*[Questions](#questions)\n\n`,
+     `# ${title}\n\n## Description\n${description}\n\n## Table of Contents\n\n[Installation](#installation)\n\n[Usage](#usage)\n\n[Licence](#licence)\n\n[Contributing](#contributing)\n\n[Tests](#tests)\n\n[Questions](#questions)\n\n## Installation\n${installation}\n\n## Usage\n${usage}\n\n## Licence\n${licence}\n\n## Contributing\n${contributing}\n\n## Tests\n${tests}\n\n## Questions:\n${questions}\n\nGitHub username: ${gitHubUserName}\n\nEmail: ${emailAddress}`,
       err => err ? console.error(err) : console.log(`${title} README.md file created!`));
    // fs.writeFile('./README.md', process.argv[2], err => err ? console.error(err) : console.log("Success"));
     
@@ -36,17 +35,30 @@ function writeToFile(fileName, data) {
 // function to initialize program
 async function init() {
     name = prompt('Hello, What is your name?');
-    //title = fs.writeFile('./README.md', `${name}\n`, err => err ? console.error(err) : prompt(`Hello, ${name}! README.md file created! What is the title of your project?`));
     title = prompt(`Hello, ${name}! What is the title of your project? `);
     description = prompt(`Please describe the project ${title}: `);
     installation = prompt(`Can you give some installation guidance? `);
     usage = prompt(`What are the usage instructions? `);
-    licence = prompt(`What form of licence will you use? `);
+    //licence = prompt(`What form of licence will you use? `);
+    licence = prompt(`What form of licence will you use? M for MIT licence (few restrictions on reuse), P for Proprietary (copyrighted) or type the licence that you will use `);
+    if (licence == 'M' || 'm') {
+      licence = 'MIT';
+    } 
+    if (licence == 'P' || 'p') {
+        licence = 'Proprietary';
+    } 
+
     contributing = prompt(`Who contributed to this project? `);
     tests = prompt(`What tests have been performed? `);
     gitHubUserName = prompt(`What is your GitHub username? `);
     emailAddress = prompt(`What is your email address `)
-    Questions = prompt(`How should someone contact you with any questions? `)
+    questions = prompt(`How should someone contact you with any questions? `)
+
+
+
+
+
+    
     writeToFile()
     
 }
