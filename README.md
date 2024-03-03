@@ -1,7 +1,8 @@
 # README-Generator<div align='right'>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</div>
 
 ## Description
-The prorgam generates a README.md file based on user input to prompts.
+The program generates a README.md file based on user input to prompts.
+You can watch a demonstration of the program here: https://drive.google.com/file/d/1Xg7fN0bdOSTAlT299lK65Fetmb9_AQa9/view 
 
 <div align='center'><img src=./screenshot1.png/></div>
 
