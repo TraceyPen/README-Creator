@@ -1,9 +1,9 @@
 # Password Generator<div align='right'>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</div>
 
 ## Description
-Create a pasword
+Create a password based on user choices
 
-<div align='center'><img src=./screenshot1.png/></div>
+<div align='center'><img src=./passwordImage.png/></div>
 
 ## Table of Contents
 
@@ -20,23 +20,23 @@ Create a pasword
 [Questions](#questions)
 
 ## Installation
-na no install
+NA no install required - web based
 
 ## Usage
-answer the questions
+Follow the prompts to create your password
 
 ## Licence
 MIT
 
 ## Contributing
-tracey
+Tracey Pender
 
 ## Tests
-tracey
+Tested by Tracey Pender
 
 ## Questions:
-questions can be emailed please
+Please send any questions to the email address provided
 
-GitHub username: tracey
+GitHub username: TraceyPen
 
-Email: traceylpender
+Email: traceylpender@yahoo.co.uk

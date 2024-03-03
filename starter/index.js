@@ -20,7 +20,7 @@ var gitHubUserName =" ";
 var emailAddress = " ";
 var questions = " ";
 var mitLicence = " "
-var image1 = " "
+var image1
 var ImageLink = " "
 
 
@@ -36,20 +36,19 @@ function writeToFile(fileName, data) {
 //if user has selected an M make MIT and add badge, if user has selected a P make Proprietary.
 function getLicence() {
      if (licence == "m" || licence == "M") {
-        console.log("licence is an M");
+        //console.log("licence is an M");
         licence = "MIT";
         mitLicence = "<div align='right'>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</div>"
       } 
      if (licence == "p" || licence == "P") {
-        console.log("licence is a P");
+       // console.log("licence is a P");
           licence = "Proprietary";
          } 
 insertImages()
 }
 
 function insertImages() {
-    if (image1 != " ");
-ImageLink = "<div align='center'><img src=" + image1 + "/></div>"
+    ImageLink = "<div align='center'><img src=" + image1 + "/></div>"
 }
 
 // function to initialize program
