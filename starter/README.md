@@ -20,11 +20,10 @@ The prorgam generates a README.md file based on user input to prompts.
 [Questions](#questions)
 
 ## Installation
-The program uses node and npm as well as prompt-sync.
-run "npm install" and "npm install prompt-sync" in the terminal to install dependencies.
+Program uses node and npm as well as prompt-sync
 
 ## Usage
-Open the terminal in VS Code and enter "node index.js" to start the program.
+Open the terminal in VS Code and enter node index.js to start the program.
 
 ## Licence
 MIT
