@@ -1,7 +1,9 @@
-# fnfn<div align='right'>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</div>
+# Password Generator<div align='right'>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</div>
 
 ## Description
-fnfn
+Create a pasword
+
+<div align='center'><img src=./screenshot1.png/></div>
 
 ## Table of Contents
 
@@ -18,23 +20,23 @@ fnfn
 [Questions](#questions)
 
 ## Installation
-fnfn
+na no install
 
 ## Usage
-fjfj
+answer the questions
 
 ## Licence
 MIT
 
 ## Contributing
-fjf
+tracey
 
 ## Tests
-fff
+tracey
 
 ## Questions:
-ff
+questions can be emailed please
 
-GitHub username: ddd
+GitHub username: tracey
 
-Email: ff
+Email: traceylpender
